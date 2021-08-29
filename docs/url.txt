@@ -1,0 +1,1 @@
+{'install_url': 'https://test.com/new', 'error_url': 'https://test.com/error'}
