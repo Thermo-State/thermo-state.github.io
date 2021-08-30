@@ -1,1 +1,1 @@
-{'install_url': 'https://test.com/new', 'error_url': 'https://test.com/error'}
+{"build": 1, "reg_url": "https://thermostate.pythonanywhere.com/reg"}
