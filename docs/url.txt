@@ -1,1 +1,1 @@
-{"build": 1, "reg_url": "https://thermostate.pythonanywhere.com/reg"}
+{"build": 2, "reg_url": "https://thermostate.pythonanywhere.com/reg"}
