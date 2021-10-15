@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>ThermoState - Thermodynamics State property calculator</title>
-    <meta name="description" content="Thermophysical property calculator. Thermodynamic cycle modeling. Properties of Steam, refrigerants and 120+ fluids">
+    <title>ThermoState | Thermodynamic State Calculator</title>
+    <meta name="description" content="Calculate &amp; Plot states on T-s, P-h diagrams. Model cycles. Steam Table. Properties of Refrigerants and 120+ fluids">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -13,126 +13,145 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
 </head>
 
 <body style="font-family: 'Red Hat Display', sans-serif;">
-    <div class="container">
+    <div class="container-xxl" style="padding: 0px;">
         <nav class="navbar navbar-light navbar-expand-md fixed-top border rounded-0 shadow navigation-clean" id="header">
-            <div class="container-fluid"><a class="navbar-brand text-end" href="#"><img src="assets/img/TS_1.png" width="50" alt="TS">&nbsp;ThermoState</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand text-end" href="#"><img src="assets/img/TS_logo.png" width="50" alt="TS">&nbsp;ThermoState</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://github.com/Thermo-State/ThermoState">Details</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCZeYIR1EjPYCPnzxw23qgyg">Tutorial</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flow</a></li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Portable</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Win-x64-portable.zip">Windows</a><a class="dropdown-item" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Ubuntu-Mint-x64-portable.tar.xz">Ubuntu/Mint</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Win-x64-portable.zip">Windows</a><a class="dropdown-item" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Ubuntu-Mint-x64-portable.tar.xz">Ubuntu</a></div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <section id="front" class="highlight-clean" style="background: rgb(238,244,247);text-shadow: 0px 0px;box-shadow: 16px 18px 3px 10px var(--bs-body-font-weight);margin: 20px;margin-top: 60px;margin-right: 0px;margin-left: 0px;">
+            <div class="container">
+                <div class="intro">
+                    <h1 class="display-3 text-center" style="color: var(--bs-pink);"><img src="assets/img/ThermoState-logo.png" alt="thermostate"><br><strong>Made for the students of Thermodynamics</strong><br></h1>
+                    <p class="lead text-center text-black-50">With ThermoState, you can calculate thermo-physical properties of fluids, Plot on state diagrams, model simple thermodynamic cycles.<br></p>
+                </div>
+                <div class="buttons"><a class="btn btn-primary shadow" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Win-x64-setup.exe" title="Completely Free for Everyone">Download</a>
+                    <p style="margin: 0px;">Windows 10 64 bit</p>
+                </div>
+                <p class="text-center">Latest version: 2.0</p>
+            </div>
+        </section>
+        <section class="border rounded-0 shadow-sm" data-aos="fade-up" style="margin: 20px 10px;text-align: center;padding: 10px 5px;padding-top: 20px;padding-bottom: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center" style="text-align: left;">
+                        <h2 class="display-4 text-primary" style="font-weight: bold;">Easy to Learn</h2>
+                        <p class="lead">It’s super easy to get started with ThermoState. Watch a short tutorial on how to use it as an alternative of steam tables and model the ideal Rankine cycle.</p><a class="btn btn-primary btn-lg shadow" role="button" href="https://youtu.be/7rplMRHJsMY">Take a Video Tour</a>
+                    </div>
+                    <div class="col-md-6 offset-md-0"><img class="img-fluid shadow" src="assets/img/Main-GUI.png" style="margin-top: 15px;"></div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" class="features-boxed">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="display-5 text-center" style="margin-bottom: 0px;">Features </h2>
+                </div>
+                <div class="row justify-content-center features" style="padding-top: 30px;padding-bottom: 30px;">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="shadow box"><i class="fas fa-calculator icon"></i>
+                            <h3 class="name">Thermophysical Properties</h3>
+                            <p class="description">Calculate properties like Entropy, Enthalpy, Prandtl number, Viscosity</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="shadow box"><i class="fa fa-area-chart icon"></i>
+                            <h3 class="name">State Diagrams</h3>
+                            <p class="description">Automatically plots calculated states on T-s, P-h and h-s diagrams</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="shadow box"><i class="fa fa-chain icon"></i>
+                            <h3 class="name">Flow</h3>
+                            <p class="description">You can model cycle by defining a chain of related states.<br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="shadow box"><i class="fa fa-history icon"></i>
+                            <h3 class="name">History</h3>
+                            <p class="description">Automatically saves your calculations for future sessions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="shadow box"><i class="fa fa-underline icon"></i>
+                            <h3 class="name">SI &amp; English Units </h3>
+                            <p class="description">You can set your preferred unit system or, customize unit per Quantity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border rounded-0" data-aos="fade-up" style="margin: 20px 10px;padding: 10px 5px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="padding: 15px;">
+                        <h2 class="display-6" style="color: var(--bs-blue);font-weight: bold;">How does ThermoState Calculate?</h2>
+                        <p class="lead">ThermoState uses CoolProp Library to calculate properties. It provides a User Interface for the library with some added convenient features. It doesn't support defining fluid mixtures yet. You don't need to be online to use it.</p>
+                    </div>
+                    <div class="col align-self-center" style="padding: 10px;">
+                        <ul class="list-group shadow">
+                            <li class="list-group-item">
+                                <h3 style="color: var(--bs-pink);">Helmholtz energy formulations</h3>
+                                <p>ThermoState uses HEOS Backend from CoolProp.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h3 style="color: var(--bs-pink);">100+ Fluids</h3>
+                                <p>A lot of fluids are available including Air, Water, R134a.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h3 style="color: var(--bs-pink);">10+ Input combinations</h3>
+                                <p>Multiple input combinations are available for specifying a state.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin: 20px 10px;">
+            <h4 class="text-center" style="padding: 20px;text-align: center;padding-bottom: 10px;"><span style="text-decoration: underline;">Useful Links</span></h4>
+            <ul class="list-group list-group-horizontal-lg">
+                <li class="list-group-item"><span><a href="http://www.coolprop.org/">CoolProp</a></span>
+                    <p>A C++ library that implements Pure and pseudo-pure fluid equations of state and transport properties for 122 components</p>
+                </li>
+                <li class="list-group-item"><span><a href="https://www.nist.gov/srd/refprop">REFPROP</a></span>
+                    <p>NIST Reference Fluid Thermodynamic and Transport Properties Database. Based on the most accurate pure fluid and mixture models currently available.<br></p>
+                </li>
+                <li class="list-group-item"><span><a href="http://platform.sysmoltd.com/ThermoFluids/FluidPropsCalculatorView">SmoWeb</a></span>
+                    <p>An open Computation platform that includes online fluid properties calculator for liquid, vapor and super-critical states based on CoolProp</p>
+                </li>
+                <li class="list-group-item"><span><a href="http://www.thermocycle.net/">ThermoCycle</a></span>
+                    <p>An open-source library for dynamic modelling of thermal systems developed in the Modelica language.</p>
+                </li>
+                <li class="list-group-item"><span><a href="http://achp.sourceforge.net/">ACHP</a></span>
+                    <p>ACHP is an open source program written to model direct expansion and secondary loops for residential-scale systems.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="shadow-lg highlight-blue" id="footer" style="margin: 20px 10px;padding: 30px 0px;padding-top: 30px;">
+            <div class="container">
+                <div class="text-center intro">
+                    <h2 class="display-6 text-center" style="margin-bottom: 10px;">About</h2>
+                    <p class="lead text-center">ThermoState was developed as a hobby project during my Final year of Mechanical Engineering. ThermoState is completely Free for everyone </p>
+                    <p class="lead shadow">Made with&nbsp;❤️ by Shihabus&nbsp;Sakib&nbsp;Rad</p>
+                </div>
+                <div class="buttons"></div>
+            </div>
+        </section>
     </div>
-    <section class="border rounded-0 shadow-sm highlight-clean" id="front" style="background: var(--bs-gray-200);text-shadow: 0px 0px;box-shadow: 16px 18px 3px 10px var(--bs-body-font-weight);margin: 20px;margin-top: 60px;">
-        <div class="container">
-            <div class="intro">
-                <h1 class="display-3 text-center" style="color: var(--bs-pink);"><img src="assets/img/ThermoState-logo%20cropped.png" alt="thermostate"><br><strong>Made for students of Thermodynamics</strong><br></h1>
-                <p class="lead text-center text-black-50">With ThermoState, you can calculate thermo-physical properties of fluids, Plot on state diagrams, model thermodynamic cycles.<br></p>
-            </div>
-            <div class="buttons"><a class="btn btn-primary shadow" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" href="https://github.com/Thermo-State/ThermoState/releases/download/v2.0/ThermoState-v2.0-Win-x64-setup.exe" title="It's FREE">Download for windows 64 bit</a></div>
-            <p class="text-center">Latest version: 2.0</p>
-        </div>
-    </section>
-    <section class="border rounded-0 shadow-sm" data-aos="fade-up" style="margin: 20px;text-align: center;padding-top: 20px;padding-bottom: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 align-self-center" style="text-align: left;">
-                    <h1 class="display-4 text-primary" style="font-weight: bold;">Easy to Learn</h1>
-                    <p class="lead">It’s super easy to get started with ThermoState. Watch a short tutorial on how to model a simple cycle.</p><a class="btn btn-primary btn-lg shadow" role="button" href="https://youtu.be/7rplMRHJsMY">Take a Video Tour</a>
-                </div>
-                <div class="col-md-6 offset-md-0"><img class="img-fluid shadow-lg" src="assets/img/ts-main.png" style="margin-top: 15px;"></div>
-            </div>
-        </div>
-    </section>
-    <section data-aos="fade-up" class="features-boxed">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Features </h2>
-            </div>
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="shadow box"><i class="fas fa-calculator icon"></i>
-                        <h3 class="name">Thermophysical properties</h3>
-                        <p class="description">Calculate properties like Entropy, Enthalpy, Prandtl number, Viscosity etc.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="shadow box"><i class="fa fa-area-chart icon"></i>
-                        <h3 class="name">State Diagrams</h3>
-                        <p class="description">Automatically plots calculated states on TS, Ph and hs diagrams</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="shadow box"><i class="fa fa-chain icon"></i>
-                        <h3 class="name">Flow</h3>
-                        <p class="description">You can model cycle by defining a chain of related states.<br></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="shadow box"><i class="fa fa-history icon"></i>
-                        <h3 class="name">History</h3>
-                        <p class="description">Automatically saves your calculations for future sessions. Continue where you left off.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="shadow box"><i class="fa fa-underline icon"></i>
-                        <h3 class="name">SI &amp; English Units </h3>
-                        <p class="description">You can set your preferred unit system or, customize unit per Quantity</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="border rounded-0" data-aos="fade-up" style="margin: 20px;padding: 10px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="padding: 15px;">
-                    <h1 style="color: var(--bs-blue);font-weight: bold;">How does ThermoState Calculate?</h1>
-                    <p class="lead">ThermoState uses CoolProp Library to calculate properties. It provides a User Interface for the library with some added convenient features. It doesn't support defining fluid mixtures yet.</p><a class="btn btn-primary btn-lg shadow" role="button" href="http://coolprop.org">Visit CoolProp Website</a>
-                </div>
-                <div class="col-md-6 align-self-center" style="padding: 12px;">
-                    <ul class="list-group shadow-lg">
-                        <li class="list-group-item">
-                            <h3 style="color: var(--bs-pink);">Helmholtz energy formulations</h3>
-                            <p>ThermoState uses HEOS Backend from CoolProp.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <h3 style="color: var(--bs-pink);">100+ Fluids</h3>
-                            <p>A lot of fluids are available including Air, Water, R134a.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <h3 style="color: var(--bs-pink);">10+ Input combinations</h3>
-                            <p>Multiple input combinations are available for specifying a state.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="shadow-lg highlight-blue" id="footer" style="margin: 20px;">
-        <div class="container">
-            <div class="text-center intro">
-                <h1 class="text-center">About</h1>
-                <p class="lead text-center">ThermoState is my hobby project. It is developed during my Final year of Mechanical Engineering. ThermoState is completely Free for everyone </p>
-                <p class="lead shadow">Made with&nbsp;❤️ by Shihabus Sakib Rad</p>
-            </div>
-            <div class="buttons"></div>
-        </div>
-    </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
